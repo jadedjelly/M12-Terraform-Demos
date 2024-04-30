@@ -1,0 +1,93 @@
+[0m[1mdata.aws_ami.latest-amazon-linux-image: Reading...[0m[0m
+[0m[1maws_vpc.myapp-vpc: Refreshing state... [id=vpc-051d0fc96ffc8d624][0m
+[0m[1mdata.aws_ami.latest-amazon-linux-image: Read complete after 1s [id=ami-0a946522147cbcbcc][0m
+[0m[1maws_internet_gateway.myapp-internet-gateway: Refreshing state... [id=igw-070c68eab4a7bbaa8][0m
+[0m[1maws_subnet.myapp-subnet-1: Refreshing state... [id=subnet-09535de52ed676704][0m
+[0m[1maws_security_group.myapp-securityGroup: Refreshing state... [id=sg-087136b5f7275ec21][0m
+[0m[1maws_route_table.myapp-route-table: Refreshing state... [id=rtb-0ed61e09e44d622af][0m
+[0m[1maws_route_table_association.myapp-route-table-association: Refreshing state... [id=rtbassoc-02c8bf11037e19b08][0m
+
+Changes to Outputs:
+  [32m+[0m[0m test_ami = {
+      [32m+[0m[0m architecture          = "x86_64"
+      [32m+[0m[0m arn                   = "arn:aws:ec2:eu-central-1::image/ami-0a946522147cbcbcc"
+      [32m+[0m[0m block_device_mappings = [
+          [32m+[0m[0m {
+              [32m+[0m[0m device_name  = "/dev/xvda"
+              [32m+[0m[0m ebs          = {
+                  [32m+[0m[0m delete_on_termination = "true"
+                  [32m+[0m[0m encrypted             = "false"
+                  [32m+[0m[0m iops                  = "0"
+                  [32m+[0m[0m snapshot_id           = "snap-0a9edf8b48d1dc213"
+                  [32m+[0m[0m throughput            = "0"
+                  [32m+[0m[0m volume_size           = "8"
+                  [32m+[0m[0m volume_type           = "gp2"
+                }
+              [32m+[0m[0m no_device    = ""
+              [32m+[0m[0m virtual_name = ""
+            },
+        ]
+      [32m+[0m[0m boot_mode             = ""
+      [32m+[0m[0m creation_date         = "2024-04-13T00:23:53.000Z"
+      [32m+[0m[0m deprecation_time      = "2025-07-01T00:00:00.000Z"
+      [32m+[0m[0m description           = "Amazon Linux 2 Kernel 5.10 AMI 2.0.20240412.0 x86_64 HVM gp2"
+      [32m+[0m[0m ena_support           = true
+      [32m+[0m[0m executable_users      = [90mnull[0m[0m
+      [32m+[0m[0m filter                = [
+          [32m+[0m[0m {
+              [32m+[0m[0m name   = "name"
+              [32m+[0m[0m values = [
+                  [32m+[0m[0m "amzn2-ami-kernel-*-x86_64-gp2",
+                ]
+            },
+          [32m+[0m[0m {
+              [32m+[0m[0m name   = "virtualization-type"
+              [32m+[0m[0m values = [
+                  [32m+[0m[0m "hvm",
+                ]
+            },
+        ]
+      [32m+[0m[0m hypervisor            = "xen"
+      [32m+[0m[0m id                    = "ami-0a946522147cbcbcc"
+      [32m+[0m[0m image_id              = "ami-0a946522147cbcbcc"
+      [32m+[0m[0m image_location        = "amazon/amzn2-ami-kernel-5.10-hvm-2.0.20240412.0-x86_64-gp2"
+      [32m+[0m[0m image_owner_alias     = "amazon"
+      [32m+[0m[0m image_type            = "machine"
+      [32m+[0m[0m imds_support          = ""
+      [32m+[0m[0m include_deprecated    = false
+      [32m+[0m[0m kernel_id             = ""
+      [32m+[0m[0m most_recent           = true
+      [32m+[0m[0m name                  = "amzn2-ami-kernel-5.10-hvm-2.0.20240412.0-x86_64-gp2"
+      [32m+[0m[0m name_regex            = [90mnull[0m[0m
+      [32m+[0m[0m owner_id              = "137112412989"
+      [32m+[0m[0m owners                = [
+          [32m+[0m[0m "amazon",
+        ]
+      [32m+[0m[0m platform              = ""
+      [32m+[0m[0m platform_details      = "Linux/UNIX"
+      [32m+[0m[0m product_codes         = []
+      [32m+[0m[0m public                = true
+      [32m+[0m[0m ramdisk_id            = ""
+      [32m+[0m[0m root_device_name      = "/dev/xvda"
+      [32m+[0m[0m root_device_type      = "ebs"
+      [32m+[0m[0m root_snapshot_id      = "snap-0a9edf8b48d1dc213"
+      [32m+[0m[0m sriov_net_support     = "simple"
+      [32m+[0m[0m state                 = "available"
+      [32m+[0m[0m state_reason          = {
+          [32m+[0m[0m code    = "UNSET"
+          [32m+[0m[0m message = "UNSET"
+        }
+      [32m+[0m[0m tags                  = {}
+      [32m+[0m[0m timeouts              = [90mnull[0m[0m
+      [32m+[0m[0m tpm_support           = ""
+      [32m+[0m[0m usage_operation       = "RunInstances"
+      [32m+[0m[0m virtualization_type   = "hvm"
+    }
+
+You can apply this plan to save these new output values to the Terraform
+state, without changing any real infrastructure.
+[90m
+─────────────────────────────────────────────────────────────────────────────[0m
+
+Note: You didn't use the -out option to save this plan, so Terraform can't
+guarantee to take exactly these actions if you run "terraform apply" now.
