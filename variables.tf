@@ -5,3 +5,4 @@ variable "pub_location" {}
 variable avail_zone {}
 variable env_prefix {}
 variable subnet_cidr_block {}
+variable image_name {}
