@@ -903,7 +903,7 @@ nginx welcome page using new ec2 instance ip
 
 #### Configuring infrastructures, not servers
 
-- Terraform gives us the option to run a script at startup, but note it doesn'l allow for debugging if an issue occurs with it - which is normal seeing as it's not designed for it
+- Terraform gives us the option to run a script at startup, but note it doesn't allow for debugging if an issue occurs with it - which is normal seeing as it's not designed for it
 
 This is why knowing the capabilities of Terraform is important, as Nana has described previously, you should know when to use Terraform and where it's use stops
 
